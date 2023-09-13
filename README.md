@@ -28,23 +28,6 @@ from notabug import addOpenTypeFeatures
 from notabug import addOpenTypeFeaturesFromString
 ```
 
-However, `fontTools`'s `addOpenTypeFeatures` can take a `FeatureFile`
-object, but we can't, so instead of:
-
-```
-from fontTools.feaLib.builder import addOpenTypeFeatures
-
-addOpenTypeFeatures(font, featureFile)
-```
-
-say
-
-```
-from notabug import addOpenTypeFeaturesFromString
-
-addOpenTypeFeaturesFromString(font, featureFile.asFea())
-```
-
 The `tables=...` argument should work. `debug=` and `filename=` are ignored.
 
 
