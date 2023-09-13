@@ -1,0 +1,19 @@
+[package]
+name = "notabug"
+version = "0.16.0"
+edition = "2021"
+authors = ["Simon Cozens <simon@simon-cozens.org>"]
+description = "Python wrapper around the fea-rs library"
+repository = "https://github.com/simoncozens/notabug"
+exclude = ["dist/*"]
+
+[dependencies]
+fea-rs = "0.16.0"
+
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies.pyo3]
+version = "0.19.2"
+features = ["extension-module"]

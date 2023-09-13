@@ -1,0 +1,14 @@
+name = "notabug"
+version = "0.16.0"
+description = "Python wrapper around the fea-rs library"
+readme = "README.md"
+
+[project]
+name = "notabug"
+dependencies = [
+	"fontTools"
+]
+
+[build-system]
+requires = ["maturin>=0.10,<0.11"]
+build-backend = "maturin"
